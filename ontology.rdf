@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#belongsToTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#belongsToTopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#givesFeedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#givesFeedback">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#hasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#hasSolution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Algebra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Algebra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#DirectSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#DirectSolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#StepByStepSolution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Geometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#NegativeFeedbak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#NegativeFeedbak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositveFeedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositveFeedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositveFeedback">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#QuadraticEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#QuadraticEquation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#SimpleEquation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#SimpleEquation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#SimpleEquation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#StepByStepSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#StepByStepSolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Algebra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Algebra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositiveFeedback1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositiveFeedback1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+        <untitled-ontology-2:belongsToTopic rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Algebra"/>
+        <untitled-ontology-2:hasSolution rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+        <untitled-ontology-2:givesFeedback rdf:resource="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#PositiveFeedback1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Feedback"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Problem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohankc/ontologies/2024/11/untitled-ontology-2#Topic"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
